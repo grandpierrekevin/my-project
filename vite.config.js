@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     Pages({
+      importMode: 'async', // active le lazy loading automatique des routes
       dirs: 'src/pages',
       extensions: ['jsx', 'js'],
     }),
