@@ -4,6 +4,7 @@ import Pages from 'vite-plugin-pages'
 import path from 'path' 
 
 export default defineConfig({
+  base: './my-project',
   plugins: [
     react(),
     Pages({
