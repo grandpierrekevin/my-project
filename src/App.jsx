@@ -8,19 +8,9 @@ export default function App() {
 
   const isLoginPage = location.pathname === "/"; // si on est sur / (login)
 
-  if (isLoginPage) {
-    // Login page sans layout
-    return (
-      <>
-        {element}
-      </>
-    );
-  }
-
-  // Toutes les autres pages avec sidebar
-  return (
-    <MainLayout>
-        {element}
-    </MainLayout>
-  );
+ return isLoginPage ? element : (
+  <MainLayout>
+    {element}
+  </MainLayout>
+);
 }
