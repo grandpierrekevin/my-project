@@ -11,7 +11,7 @@ export default function App() {
   if (isLoginPage) {
     // Login page sans layout
     return (
-        element
+        {element}
     );
   }
 
